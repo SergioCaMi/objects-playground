@@ -11,3 +11,4 @@ let vacuna = {
  *
  * Resultado esperado: https://oscarm.tinytake.com/msc/ODgxMTQ2MF8yMjI0MDgxMA
  */
+console.log(`La efectividad de la vacuna es de un ${vacuna.efectividad}%.`);

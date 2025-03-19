@@ -8,7 +8,28 @@
  */
 
 function detectPureColor(rgb) {
-
+    if (rgb.r == 255){
+        if (rgb.g>0 || rgb.b>0){
+            return "";
+        } else {
+            return "red";
+        }
+    }
+    if (rgb.g == 255){
+        if (rgb.r>0 || rgb.b>0){
+            return "";
+        } else {
+            return "green";
+        }
+    }
+    if (rgb.b == 255){
+        if (rgb.r>0 || rgb.g>0){
+            return "";
+        } else {
+            return "blue";
+        }
+    }
+    return "";
 }
 
 console.log(detectPureColor({ r: 255, g: 0, b: 0 })); // "red"

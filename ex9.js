@@ -12,6 +12,7 @@ let estudiante = {
   conocimientos: [],
   aprender: function (nuevoConocimiento) {
     // una línia de código
+    return estudiante.conocimientos.push(nuevoConocimiento);
   },
 };
 
@@ -20,3 +21,5 @@ console.log(
   "Debería aparecer aquí que el estudiante ha aprendido HTML:",
   estudiante.conocimientos
 );
+
+ 
